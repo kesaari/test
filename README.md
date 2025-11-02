@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+<!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -43,4 +43,12 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To learn React, check out the [React documentation](https://reactjs.org/). -->
+
+Запуск приложения производится через команду `npm start`
+
+Что было реализовано:
+1. Возможность пользователям указывать свои имена/никнеймы в начале игры, а так же менять их в процессе. Для реализации были использованы компоненты из библиотеки antd
+2. После первого хода появляется блок со статистикой игры - статус доски, последовательность ходов.
+3. Анимация падения фишек, а так же эффект при наведении курсора на свободные ячейки
+4. Цветовая индикация различных элементов в зависимости от статуса игры.
