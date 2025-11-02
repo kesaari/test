@@ -1,0 +1,41 @@
+.gameInfo {
+  margin: 20px;
+  text-align: center;
+}
+
+.status {
+  font-size: 1.3em;
+  color: white;
+  font-weight: bold;
+}
+
+.winner {
+  color: #ffeb3b;
+  font-size: 1.3em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.draw {
+  color: #ff9800;
+  font-size: 1.8em;
+  background: rgba(255, 152, 0, 0.2);
+  padding: 15px 30px;
+  border-radius: 25px;
+}
+
+.playerIndicator {
+  padding: 8px 16px;
+  border-radius: 20px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.player1 {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.player2 {
+  background-color: #3498db;
+  color: white;
+}

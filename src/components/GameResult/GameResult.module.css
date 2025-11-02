@@ -1,0 +1,147 @@
+.gameResult {
+  margin: 30px;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  color: white;
+  max-width: 800px;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.title {
+  margin: 0 0 20px 0;
+  text-align: center;
+  font-size: 1.5em;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.playersInfo {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.playerInfo {
+  flex: 1;
+  min-width: 300px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  border-radius: 12px;
+  color: #2c3e50;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.player1Info {
+  border-left: 6px solid #e74c3c;
+}
+
+.player2Info {
+  border-left: 6px solid #3498db;
+}
+
+.playerInfo h4 {
+  margin: 0 0 15px 0;
+  color: #2c3e50;
+  font-size: 1.2em;
+  border-bottom: 2px solid #ecf0f1;
+  padding-bottom: 8px;
+}
+
+.positions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 10px;
+  max-height: 120px;
+  overflow-y: auto;
+  padding: 5px;
+}
+
+.position {
+  background: #ecf0f1;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.85em;
+  border: 1px solid #bdc3c7;
+}
+
+.count {
+  font-size: 0.9em;
+  color: #7f8c8d;
+  font-weight: bold;
+  text-align: right;
+}
+
+.gameState {
+  font-size: 1.3em;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.pending {
+  background: rgba(52, 152, 219, 0.3);
+  color: #3498db;
+}
+
+.win {
+  background: rgba(46, 204, 113, 0.3);
+  color: #2ecc71;
+}
+
+.draw {
+  background: rgba(243, 156, 18, 0.3);
+  color: #f39c12;
+}
+
+.winnerDetails {
+  background: linear-gradient(45deg, #2ecc71, #27ae60);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.winnerDetails h4 {
+  margin: 0 0 15px 0;
+  font-size: 1.4em;
+  color: white;
+}
+
+.winningPositions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.winPosition {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #27ae60;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .playersInfo {
+    flex-direction: column;
+  }
+  
+  .playerInfo {
+    min-width: auto;
+  }
+  
+  .gameResult {
+    padding: 15px;
+    margin: 20px 10px;
+  }
+}

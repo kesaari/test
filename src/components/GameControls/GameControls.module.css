@@ -1,0 +1,80 @@
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin: 20px;
+}
+
+.controlButtons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.restartButton {
+  padding: 15px 35px;
+  font-size: 1.2em;
+  background: linear-gradient(45deg, #2ecc71, #27ae60);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+}
+
+.restartButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(45deg, #27ae60, #219a52);
+}
+
+.restartButton:active {
+  transform: translateY(0);
+}
+
+.editNamesButton {
+  padding: 15px 25px;
+  font-size: 1.1em;
+  background: linear-gradient(45deg, #3498db, #2980b9);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+}
+
+.editNamesButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(45deg, #2980b9, #2573a7);
+}
+
+.editNamesButton:active {
+  transform: translateY(0);
+}
+
+.movesCount {
+  color: white;
+  font-size: 1.1em;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .controlButtons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .editNamesButton,
+  .restartButton {
+    width: 200px;
+  }
+}
